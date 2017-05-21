@@ -5,7 +5,7 @@
 #include "FileCommand.h"
 
 #include <iostream>
-#include "FileCommands.h"
+#include "FileCommand.h"
 #include <cstring>
 
 const char* FileCommand::getName() const{
