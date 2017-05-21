@@ -39,7 +39,7 @@ std::ostream &Cell::Print(std::ostream &os) const {
 }
 
 
-std::ostream &Cell::operator<<(std::ostream &os, const Cell &c) {
+std::ostream& operator<<(std::ostream &os, const Cell &c) {
     return c.Print(os);
 }
 
