@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/Electronic_Tables.dir/main.cpp.obj"
+  "CMakeFiles/Electronic_Tables.dir/FileCommand.cpp.obj"
   "Electronic_Tables.pdb"
   "Electronic_Tables.exe"
   "Electronic_Tables.exe.manifest"

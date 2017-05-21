@@ -82,6 +82,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="D:/FMI/Electronic-Tables/FileCommand.cpp">
+			<Option target="Electronic_Tables"/>
+		</Unit>
+		<Unit filename="D:/FMI/Electronic-Tables/FileCommand.h">
+			<Option target="Electronic_Tables"/>
+		</Unit>
 		<Unit filename="D:/FMI/Electronic-Tables/main.cpp">
 			<Option target="Electronic_Tables"/>
 		</Unit>

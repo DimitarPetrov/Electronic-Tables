@@ -122,6 +122,33 @@ Electronic_Tables/fast:
 	$(MAKE) -f CMakeFiles\Electronic_Tables.dir\build.make CMakeFiles/Electronic_Tables.dir/build
 .PHONY : Electronic_Tables/fast
 
+FileCommand.obj: FileCommand.cpp.obj
+
+.PHONY : FileCommand.obj
+
+# target to build an object file
+FileCommand.cpp.obj:
+	$(MAKE) -f CMakeFiles\Electronic_Tables.dir\build.make CMakeFiles/Electronic_Tables.dir/FileCommand.cpp.obj
+.PHONY : FileCommand.cpp.obj
+
+FileCommand.i: FileCommand.cpp.i
+
+.PHONY : FileCommand.i
+
+# target to preprocess a source file
+FileCommand.cpp.i:
+	$(MAKE) -f CMakeFiles\Electronic_Tables.dir\build.make CMakeFiles/Electronic_Tables.dir/FileCommand.cpp.i
+.PHONY : FileCommand.cpp.i
+
+FileCommand.s: FileCommand.cpp.s
+
+.PHONY : FileCommand.s
+
+# target to generate assembly for a file
+FileCommand.cpp.s:
+	$(MAKE) -f CMakeFiles\Electronic_Tables.dir\build.make CMakeFiles/Electronic_Tables.dir/FileCommand.cpp.s
+.PHONY : FileCommand.cpp.s
+
 main.obj: main.cpp.obj
 
 .PHONY : main.obj
@@ -158,6 +185,9 @@ help:
 	@echo ... rebuild_cache
 	@echo ... Electronic_Tables
 	@echo ... edit_cache
+	@echo ... FileCommand.obj
+	@echo ... FileCommand.i
+	@echo ... FileCommand.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
