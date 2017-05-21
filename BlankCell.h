@@ -5,8 +5,13 @@
 #ifndef ELECTRONIC_TABLES_BLANKCELL_H
 #define ELECTRONIC_TABLES_BLANKCELL_H
 
+#include "Cell.h"
 
-class BlankCell {
+class BlankCell:public Cell{
+public:
+    BlankCell();
+    virtual std::ostream& Print(std::ostream& os)const override;
+private:
 
 };
 

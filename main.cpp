@@ -2,6 +2,7 @@
 #include <fstream>
 #include <cstring>
 #include "FileCommand.h"
+#include "BlankCell.h"
 using namespace std;
 
 void FileCommands(){
