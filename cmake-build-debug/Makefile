@@ -122,6 +122,60 @@ Electronic_Tables/fast:
 	$(MAKE) -f CMakeFiles\Electronic_Tables.dir\build.make CMakeFiles/Electronic_Tables.dir/build
 .PHONY : Electronic_Tables/fast
 
+BlankCell.obj: BlankCell.cpp.obj
+
+.PHONY : BlankCell.obj
+
+# target to build an object file
+BlankCell.cpp.obj:
+	$(MAKE) -f CMakeFiles\Electronic_Tables.dir\build.make CMakeFiles/Electronic_Tables.dir/BlankCell.cpp.obj
+.PHONY : BlankCell.cpp.obj
+
+BlankCell.i: BlankCell.cpp.i
+
+.PHONY : BlankCell.i
+
+# target to preprocess a source file
+BlankCell.cpp.i:
+	$(MAKE) -f CMakeFiles\Electronic_Tables.dir\build.make CMakeFiles/Electronic_Tables.dir/BlankCell.cpp.i
+.PHONY : BlankCell.cpp.i
+
+BlankCell.s: BlankCell.cpp.s
+
+.PHONY : BlankCell.s
+
+# target to generate assembly for a file
+BlankCell.cpp.s:
+	$(MAKE) -f CMakeFiles\Electronic_Tables.dir\build.make CMakeFiles/Electronic_Tables.dir/BlankCell.cpp.s
+.PHONY : BlankCell.cpp.s
+
+Cell.obj: Cell.cpp.obj
+
+.PHONY : Cell.obj
+
+# target to build an object file
+Cell.cpp.obj:
+	$(MAKE) -f CMakeFiles\Electronic_Tables.dir\build.make CMakeFiles/Electronic_Tables.dir/Cell.cpp.obj
+.PHONY : Cell.cpp.obj
+
+Cell.i: Cell.cpp.i
+
+.PHONY : Cell.i
+
+# target to preprocess a source file
+Cell.cpp.i:
+	$(MAKE) -f CMakeFiles\Electronic_Tables.dir\build.make CMakeFiles/Electronic_Tables.dir/Cell.cpp.i
+.PHONY : Cell.cpp.i
+
+Cell.s: Cell.cpp.s
+
+.PHONY : Cell.s
+
+# target to generate assembly for a file
+Cell.cpp.s:
+	$(MAKE) -f CMakeFiles\Electronic_Tables.dir\build.make CMakeFiles/Electronic_Tables.dir/Cell.cpp.s
+.PHONY : Cell.cpp.s
+
 FileCommand.obj: FileCommand.cpp.obj
 
 .PHONY : FileCommand.obj
@@ -185,6 +239,12 @@ help:
 	@echo ... rebuild_cache
 	@echo ... Electronic_Tables
 	@echo ... edit_cache
+	@echo ... BlankCell.obj
+	@echo ... BlankCell.i
+	@echo ... BlankCell.s
+	@echo ... Cell.obj
+	@echo ... Cell.i
+	@echo ... Cell.s
 	@echo ... FileCommand.obj
 	@echo ... FileCommand.i
 	@echo ... FileCommand.s

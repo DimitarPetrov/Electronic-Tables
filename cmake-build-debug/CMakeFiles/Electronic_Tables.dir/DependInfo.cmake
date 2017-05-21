@@ -4,6 +4,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "D:/FMI/Electronic-Tables/BlankCell.cpp" "D:/FMI/Electronic-Tables/cmake-build-debug/CMakeFiles/Electronic_Tables.dir/BlankCell.cpp.obj"
+  "D:/FMI/Electronic-Tables/Cell.cpp" "D:/FMI/Electronic-Tables/cmake-build-debug/CMakeFiles/Electronic_Tables.dir/Cell.cpp.obj"
   "D:/FMI/Electronic-Tables/FileCommand.cpp" "D:/FMI/Electronic-Tables/cmake-build-debug/CMakeFiles/Electronic_Tables.dir/FileCommand.cpp.obj"
   "D:/FMI/Electronic-Tables/main.cpp" "D:/FMI/Electronic-Tables/cmake-build-debug/CMakeFiles/Electronic_Tables.dir/main.cpp.obj"
   )

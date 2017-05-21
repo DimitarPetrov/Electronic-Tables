@@ -82,6 +82,18 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="D:/FMI/Electronic-Tables/BlankCell.cpp">
+			<Option target="Electronic_Tables"/>
+		</Unit>
+		<Unit filename="D:/FMI/Electronic-Tables/BlankCell.h">
+			<Option target="Electronic_Tables"/>
+		</Unit>
+		<Unit filename="D:/FMI/Electronic-Tables/Cell.cpp">
+			<Option target="Electronic_Tables"/>
+		</Unit>
+		<Unit filename="D:/FMI/Electronic-Tables/Cell.h">
+			<Option target="Electronic_Tables"/>
+		</Unit>
 		<Unit filename="D:/FMI/Electronic-Tables/FileCommand.cpp">
 			<Option target="Electronic_Tables"/>
 		</Unit>
