@@ -65,7 +65,7 @@ CMAKE_BINARY_DIR = D:\FMI\Electronic-Tables\cmake-build-debug
 CMakeFiles/Electronic_Tables.dir/all:
 	$(MAKE) -f CMakeFiles\Electronic_Tables.dir\build.make CMakeFiles/Electronic_Tables.dir/depend
 	$(MAKE) -f CMakeFiles\Electronic_Tables.dir\build.make CMakeFiles/Electronic_Tables.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\FMI\Electronic-Tables\cmake-build-debug\CMakeFiles --progress-num=1,2,3,4,5 "Built target Electronic_Tables"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\FMI\Electronic-Tables\cmake-build-debug\CMakeFiles --progress-num=1,2,3,4,5,6 "Built target Electronic_Tables"
 .PHONY : CMakeFiles/Electronic_Tables.dir/all
 
 # Include target in all.
@@ -75,7 +75,7 @@ all: CMakeFiles/Electronic_Tables.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/Electronic_Tables.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\FMI\Electronic-Tables\cmake-build-debug\CMakeFiles 5
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\FMI\Electronic-Tables\cmake-build-debug\CMakeFiles 6
 	$(MAKE) -f CMakeFiles\Makefile2 CMakeFiles/Electronic_Tables.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start D:\FMI\Electronic-Tables\cmake-build-debug\CMakeFiles 0
 .PHONY : CMakeFiles/Electronic_Tables.dir/rule

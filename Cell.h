@@ -16,7 +16,7 @@ public:
     virtual ~Cell();
 
     const char* getContent() const;
-    virtual void setContent(const char* c);
+    virtual void setContent(const char* c = "") = 0;
 
     virtual std::ostream& Print(std::ostream& os) const;
     friend std::ostream&operator<<(std::ostream& os, const Cell& c);

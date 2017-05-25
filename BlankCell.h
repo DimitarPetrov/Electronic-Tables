@@ -10,7 +10,8 @@
 class BlankCell:public Cell{
 public:
     BlankCell();
-    virtual std::ostream& Print(std::ostream& os)const override;
+    virtual void setContent(const char* c = "") override;
+    //virtual std::ostream& Print(std::ostream& os)const override;
 private:
 
 };

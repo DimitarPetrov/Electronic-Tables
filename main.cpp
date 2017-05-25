@@ -69,6 +69,7 @@ void FileCommands(){
 }
 
 int main() {
-
+    BlankCell a;
+    cout<<a;
     return 0;
 }

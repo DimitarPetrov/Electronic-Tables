@@ -203,6 +203,33 @@ FileCommand.cpp.s:
 	$(MAKE) -f CMakeFiles\Electronic_Tables.dir\build.make CMakeFiles/Electronic_Tables.dir/FileCommand.cpp.s
 .PHONY : FileCommand.cpp.s
 
+IntCell.obj: IntCell.cpp.obj
+
+.PHONY : IntCell.obj
+
+# target to build an object file
+IntCell.cpp.obj:
+	$(MAKE) -f CMakeFiles\Electronic_Tables.dir\build.make CMakeFiles/Electronic_Tables.dir/IntCell.cpp.obj
+.PHONY : IntCell.cpp.obj
+
+IntCell.i: IntCell.cpp.i
+
+.PHONY : IntCell.i
+
+# target to preprocess a source file
+IntCell.cpp.i:
+	$(MAKE) -f CMakeFiles\Electronic_Tables.dir\build.make CMakeFiles/Electronic_Tables.dir/IntCell.cpp.i
+.PHONY : IntCell.cpp.i
+
+IntCell.s: IntCell.cpp.s
+
+.PHONY : IntCell.s
+
+# target to generate assembly for a file
+IntCell.cpp.s:
+	$(MAKE) -f CMakeFiles\Electronic_Tables.dir\build.make CMakeFiles/Electronic_Tables.dir/IntCell.cpp.s
+.PHONY : IntCell.cpp.s
+
 main.obj: main.cpp.obj
 
 .PHONY : main.obj
@@ -248,6 +275,9 @@ help:
 	@echo ... FileCommand.obj
 	@echo ... FileCommand.i
 	@echo ... FileCommand.s
+	@echo ... IntCell.obj
+	@echo ... IntCell.i
+	@echo ... IntCell.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

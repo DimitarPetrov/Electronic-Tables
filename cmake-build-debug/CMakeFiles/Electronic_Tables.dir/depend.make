@@ -3,6 +3,7 @@
 
 CMakeFiles/Electronic_Tables.dir/BlankCell.cpp.obj: ../BlankCell.cpp
 CMakeFiles/Electronic_Tables.dir/BlankCell.cpp.obj: ../BlankCell.h
+CMakeFiles/Electronic_Tables.dir/BlankCell.cpp.obj: ../Cell.h
 
 CMakeFiles/Electronic_Tables.dir/Cell.cpp.obj: ../Cell.cpp
 CMakeFiles/Electronic_Tables.dir/Cell.cpp.obj: ../Cell.h
@@ -10,6 +11,8 @@ CMakeFiles/Electronic_Tables.dir/Cell.cpp.obj: ../Cell.h
 CMakeFiles/Electronic_Tables.dir/FileCommand.cpp.obj: ../FileCommand.cpp
 CMakeFiles/Electronic_Tables.dir/FileCommand.cpp.obj: ../FileCommand.h
 
+CMakeFiles/Electronic_Tables.dir/main.cpp.obj: ../BlankCell.h
+CMakeFiles/Electronic_Tables.dir/main.cpp.obj: ../Cell.h
 CMakeFiles/Electronic_Tables.dir/main.cpp.obj: ../FileCommand.h
 CMakeFiles/Electronic_Tables.dir/main.cpp.obj: ../main.cpp
 

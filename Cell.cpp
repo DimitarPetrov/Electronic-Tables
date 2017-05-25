@@ -46,9 +46,3 @@ std::ostream& operator<<(std::ostream &os, const Cell &c) {
 const char *Cell::getContent() const {
     return content;
 }
-
-void Cell::setContent(const char *c) {
-    delete[] content;
-    content = new char[strlen(c) + 1];
-    strcpy(content, c);
-}
