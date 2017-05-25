@@ -124,6 +124,12 @@
 		<Unit filename="D:/FMI/Electronic-Tables/SRow.h">
 			<Option target="Electronic_Tables"/>
 		</Unit>
+		<Unit filename="D:/FMI/Electronic-Tables/Spreadsheet.cpp">
+			<Option target="Electronic_Tables"/>
+		</Unit>
+		<Unit filename="D:/FMI/Electronic-Tables/Spreadsheet.h">
+			<Option target="Electronic_Tables"/>
+		</Unit>
 		<Unit filename="D:/FMI/Electronic-Tables/StringCell.cpp">
 			<Option target="Electronic_Tables"/>
 		</Unit>

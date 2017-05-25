@@ -8,6 +8,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/Electronic_Tables.dir/StringCell.cpp.obj"
   "CMakeFiles/Electronic_Tables.dir/FormulaCell.cpp.obj"
   "CMakeFiles/Electronic_Tables.dir/SRow.cpp.obj"
+  "CMakeFiles/Electronic_Tables.dir/Spreadsheet.cpp.obj"
   "Electronic_Tables.pdb"
   "Electronic_Tables.exe"
   "Electronic_Tables.exe.manifest"

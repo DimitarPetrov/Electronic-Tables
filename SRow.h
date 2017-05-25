@@ -22,7 +22,7 @@ public:
     void empty();
 
     friend std::ostream& operator<<(std::ostream& out, const SRow& a);
-
+    friend std::istream& operator>>(std::istream& is, SRow& a);
 
 private:
     Cell** row;
@@ -33,6 +33,12 @@ private:
     void Erase();
     void resize();
 };
+
+void ClearWhitespaces(char* a);
+bool isInt(char* a);
+bool isString(char* a);
+bool isDouble(char* a);
+bool isFormula(char* a);
 
 
 #endif //ELECTRONIC_TABLES_SROW_H

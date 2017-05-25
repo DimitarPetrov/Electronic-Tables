@@ -13,7 +13,7 @@ void BlankCell::formatFix(const char *c) {
 }
 
 std::ostream &BlankCell::Print(std::ostream &os) const {
-    return os<<content;
+    return os;
 }
 
 Cell *BlankCell::Clone() const {

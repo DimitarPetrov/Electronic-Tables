@@ -311,6 +311,33 @@ SRow.cpp.s:
 	$(MAKE) -f CMakeFiles\Electronic_Tables.dir\build.make CMakeFiles/Electronic_Tables.dir/SRow.cpp.s
 .PHONY : SRow.cpp.s
 
+Spreadsheet.obj: Spreadsheet.cpp.obj
+
+.PHONY : Spreadsheet.obj
+
+# target to build an object file
+Spreadsheet.cpp.obj:
+	$(MAKE) -f CMakeFiles\Electronic_Tables.dir\build.make CMakeFiles/Electronic_Tables.dir/Spreadsheet.cpp.obj
+.PHONY : Spreadsheet.cpp.obj
+
+Spreadsheet.i: Spreadsheet.cpp.i
+
+.PHONY : Spreadsheet.i
+
+# target to preprocess a source file
+Spreadsheet.cpp.i:
+	$(MAKE) -f CMakeFiles\Electronic_Tables.dir\build.make CMakeFiles/Electronic_Tables.dir/Spreadsheet.cpp.i
+.PHONY : Spreadsheet.cpp.i
+
+Spreadsheet.s: Spreadsheet.cpp.s
+
+.PHONY : Spreadsheet.s
+
+# target to generate assembly for a file
+Spreadsheet.cpp.s:
+	$(MAKE) -f CMakeFiles\Electronic_Tables.dir\build.make CMakeFiles/Electronic_Tables.dir/Spreadsheet.cpp.s
+.PHONY : Spreadsheet.cpp.s
+
 StringCell.obj: StringCell.cpp.obj
 
 .PHONY : StringCell.obj
@@ -395,6 +422,9 @@ help:
 	@echo ... SRow.obj
 	@echo ... SRow.i
 	@echo ... SRow.s
+	@echo ... Spreadsheet.obj
+	@echo ... Spreadsheet.i
+	@echo ... Spreadsheet.s
 	@echo ... StringCell.obj
 	@echo ... StringCell.i
 	@echo ... StringCell.s

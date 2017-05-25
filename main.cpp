@@ -7,6 +7,7 @@
 #include "DoubleCell.h"
 #include "StringCell.h"
 #include "SRow.h"
+#include "Spreadsheet.h"
 using namespace std;
 
 void FileCommands(){
@@ -74,10 +75,8 @@ void FileCommands(){
 
 int main() {
     SRow a;
-    a.add(new BlankCell());
-    a.add(new DoubleCell(" 124.42"));
-    a.add(new StringCell( " asfa a  s  "));
-    a.add(new IntCell( "  12  "));
+    ifstream inf("D:\\FMI\\Electronic-Tables\\test.txt");
+    inf>>a;
     cout<<a;
     return 0;
 }
