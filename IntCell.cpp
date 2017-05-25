@@ -3,3 +3,16 @@
 //
 
 #include "IntCell.h"
+
+
+IntCell::IntCell(const char *rc) : Cell(rc) {
+    content =
+}
+
+std::ostream &IntCell::Print(std::ostream &os) const {
+    return Cell::Print(os);
+}
+
+int IntCell::formatFix(const char *rc) {
+
+}

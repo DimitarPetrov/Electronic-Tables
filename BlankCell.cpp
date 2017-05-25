@@ -5,17 +5,15 @@
 #include "BlankCell.h"
 
 BlankCell::BlankCell() {
-    setContent();
+    formatFix(getContent());
 }
 
-//std::ostream &BlankCell::Print(std::ostream &os)const {
-//    os<<content;
-//}
-
-void BlankCell::setContent(const char *c) {
-    delete[] content;
-    content = new char[3];
-    content[0] = '\'';
-    content[1] = '\'';
+void BlankCell::formatFix(const char *rc) {
+    content[0] = ',';
+    content[1] = ',';
     content[2] = '\0';
+}
+
+std::ostream &BlankCell::Print(std::ostream &os) const {
+    return os<<content;
 }

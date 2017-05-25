@@ -6,9 +6,9 @@
 #include <iostream>
 #include <cstring>
 
-Cell::Cell(const char *c) {
-    content = new char[strlen(c) + 1];
-    strcpy(content, c);
+Cell::Cell(const char *rc) {
+    rawContent = new char[strlen(rc) + 1];
+    strcpy(rawContent, rc);
 }
 
 Cell::Cell(const Cell &c) {
@@ -19,22 +19,22 @@ Cell &Cell::operator=(const Cell &c) {
     if(this == &c){
         return *this;
     }
-    delete[] content;
+    delete[] rawContent;
     Copy(c);
     return *this;
 }
 
 Cell::~Cell() {
-    delete[] content;
+    delete[] rawContent;
 }
 
 void Cell::Copy(const Cell &c) {
-    content = new char[strlen(c.content) + 1];
-    strcpy(content, c.content);
+    rawContent = new char[strlen(c.rawContent) + 1];
+    strcpy(rawContent, c.rawContent);
 }
 
 std::ostream &Cell::Print(std::ostream &os) const {
-    os<<"Content: "<<content;
+    os<<"rawContent: "<<rawContent;
     return os;
 }
 
@@ -44,5 +44,11 @@ std::ostream& operator<<(std::ostream &os, const Cell &c) {
 }
 
 const char *Cell::getContent() const {
-    return content;
+    return rawContent;
+}
+
+void Cell::setContent(const char *rc) {
+    delete[] rawContent;
+    rawContent = new char[strlen(rc) + 1];
+    strcpy(rawContent, rc);
 }

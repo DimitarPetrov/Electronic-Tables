@@ -5,9 +5,17 @@
 #ifndef ELECTRONIC_TABLES_INTCELL_H
 #define ELECTRONIC_TABLES_INTCELL_H
 
+#include "Cell.h"
 
-class IntCell {
+class IntCell: public Cell {
+public:
+    IntCell(const char* rc);
+    virtual std::ostream& Print(std::ostream& os) const override;
 
+private:
+    int content;
+
+    int formatFix(const char* rc);
 };
 
 

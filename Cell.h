@@ -9,21 +9,20 @@
 
 class Cell {
 public:
-    Cell(){content = nullptr;};
-    Cell(const char* c);
-    Cell(const Cell& c);
-    Cell& operator= (const Cell& c);
+    Cell(){rawContent = nullptr;};
+    Cell(const char* rc);
+    Cell(const Cell& rc);
+    Cell& operator= (const Cell& rc);
     virtual ~Cell();
 
     const char* getContent() const;
-    virtual void setContent(const char* c = "") = 0;
+    virtual void setContent(const char* rc = "");
 
     virtual std::ostream& Print(std::ostream& os) const;
     friend std::ostream&operator<<(std::ostream& os, const Cell& c);
 
-protected:
-    char* content;
 private:
+    char* rawContent;
     void Copy(const Cell& c);
 };
 
