@@ -4,11 +4,11 @@
 
 #include "BlankCell.h"
 
-BlankCell::BlankCell() {
-    formatFix(getContent());
+BlankCell::BlankCell(const char* c) {
+    formatFix(c);
 }
 
-void BlankCell::formatFix(const char *rc) {
+void BlankCell::formatFix(const char *c) {
     content[0] = ',';
     content[1] = ',';
     content[2] = '\0';

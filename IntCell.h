@@ -9,13 +9,14 @@
 
 class IntCell: public Cell {
 public:
-    IntCell(const char* rc);
+    IntCell(const char* c = "");
     virtual std::ostream& Print(std::ostream& os) const override;
+    virtual ~IntCell(){}
 
 private:
     int content;
 
-    int formatFix(const char* rc);
+    int formatFix(const char* c);
 };
 
 

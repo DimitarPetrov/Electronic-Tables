@@ -8,11 +8,21 @@ CMakeFiles/Electronic_Tables.dir/BlankCell.cpp.obj: ../Cell.h
 CMakeFiles/Electronic_Tables.dir/Cell.cpp.obj: ../Cell.cpp
 CMakeFiles/Electronic_Tables.dir/Cell.cpp.obj: ../Cell.h
 
+CMakeFiles/Electronic_Tables.dir/DoubleCell.cpp.obj: ../Cell.h
+CMakeFiles/Electronic_Tables.dir/DoubleCell.cpp.obj: ../DoubleCell.cpp
+CMakeFiles/Electronic_Tables.dir/DoubleCell.cpp.obj: ../DoubleCell.h
+
 CMakeFiles/Electronic_Tables.dir/FileCommand.cpp.obj: ../FileCommand.cpp
 CMakeFiles/Electronic_Tables.dir/FileCommand.cpp.obj: ../FileCommand.h
 
+CMakeFiles/Electronic_Tables.dir/IntCell.cpp.obj: ../Cell.h
+CMakeFiles/Electronic_Tables.dir/IntCell.cpp.obj: ../IntCell.cpp
+CMakeFiles/Electronic_Tables.dir/IntCell.cpp.obj: ../IntCell.h
+
 CMakeFiles/Electronic_Tables.dir/main.cpp.obj: ../BlankCell.h
 CMakeFiles/Electronic_Tables.dir/main.cpp.obj: ../Cell.h
+CMakeFiles/Electronic_Tables.dir/main.cpp.obj: ../DoubleCell.h
 CMakeFiles/Electronic_Tables.dir/main.cpp.obj: ../FileCommand.h
+CMakeFiles/Electronic_Tables.dir/main.cpp.obj: ../IntCell.h
 CMakeFiles/Electronic_Tables.dir/main.cpp.obj: ../main.cpp
 

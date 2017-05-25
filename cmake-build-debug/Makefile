@@ -176,6 +176,33 @@ Cell.cpp.s:
 	$(MAKE) -f CMakeFiles\Electronic_Tables.dir\build.make CMakeFiles/Electronic_Tables.dir/Cell.cpp.s
 .PHONY : Cell.cpp.s
 
+DoubleCell.obj: DoubleCell.cpp.obj
+
+.PHONY : DoubleCell.obj
+
+# target to build an object file
+DoubleCell.cpp.obj:
+	$(MAKE) -f CMakeFiles\Electronic_Tables.dir\build.make CMakeFiles/Electronic_Tables.dir/DoubleCell.cpp.obj
+.PHONY : DoubleCell.cpp.obj
+
+DoubleCell.i: DoubleCell.cpp.i
+
+.PHONY : DoubleCell.i
+
+# target to preprocess a source file
+DoubleCell.cpp.i:
+	$(MAKE) -f CMakeFiles\Electronic_Tables.dir\build.make CMakeFiles/Electronic_Tables.dir/DoubleCell.cpp.i
+.PHONY : DoubleCell.cpp.i
+
+DoubleCell.s: DoubleCell.cpp.s
+
+.PHONY : DoubleCell.s
+
+# target to generate assembly for a file
+DoubleCell.cpp.s:
+	$(MAKE) -f CMakeFiles\Electronic_Tables.dir\build.make CMakeFiles/Electronic_Tables.dir/DoubleCell.cpp.s
+.PHONY : DoubleCell.cpp.s
+
 FileCommand.obj: FileCommand.cpp.obj
 
 .PHONY : FileCommand.obj
@@ -272,6 +299,9 @@ help:
 	@echo ... Cell.obj
 	@echo ... Cell.i
 	@echo ... Cell.s
+	@echo ... DoubleCell.obj
+	@echo ... DoubleCell.i
+	@echo ... DoubleCell.s
 	@echo ... FileCommand.obj
 	@echo ... FileCommand.i
 	@echo ... FileCommand.s

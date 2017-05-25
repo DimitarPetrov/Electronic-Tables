@@ -3,16 +3,17 @@
 //
 
 #include "IntCell.h"
+#include <stdlib.h>
 
 
-IntCell::IntCell(const char *rc) : Cell(rc) {
-    content =
+IntCell::IntCell(const char *c){
+    content = formatFix(c);
 }
 
 std::ostream &IntCell::Print(std::ostream &os) const {
-    return Cell::Print(os);
+    return os<<content;
 }
 
-int IntCell::formatFix(const char *rc) {
-
+int IntCell::formatFix(const char *c) {
+    return atoi(c);
 }

@@ -3,6 +3,8 @@
 #include <cstring>
 #include "FileCommand.h"
 #include "BlankCell.h"
+#include "IntCell.h"
+#include "DoubleCell.h"
 using namespace std;
 
 void FileCommands(){
@@ -69,7 +71,7 @@ void FileCommands(){
 }
 
 int main() {
-    BlankCell a;
+    DoubleCell a("  1.33  ");
     cout<<a;
     return 0;
 }

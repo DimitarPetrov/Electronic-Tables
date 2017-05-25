@@ -94,6 +94,12 @@
 		<Unit filename="D:/FMI/Electronic-Tables/Cell.h">
 			<Option target="Electronic_Tables"/>
 		</Unit>
+		<Unit filename="D:/FMI/Electronic-Tables/DoubleCell.cpp">
+			<Option target="Electronic_Tables"/>
+		</Unit>
+		<Unit filename="D:/FMI/Electronic-Tables/DoubleCell.h">
+			<Option target="Electronic_Tables"/>
+		</Unit>
 		<Unit filename="D:/FMI/Electronic-Tables/FileCommand.cpp">
 			<Option target="Electronic_Tables"/>
 		</Unit>

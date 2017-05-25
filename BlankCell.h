@@ -9,11 +9,11 @@
 
 class BlankCell:public Cell{
 public:
-    BlankCell();
+    BlankCell(const char* c = "");
     virtual std::ostream& Print(std::ostream& os)const override;
+    virtual ~BlankCell(){}
 private:
     char content[3];
-
     void formatFix(const char* rc);
 };
 
