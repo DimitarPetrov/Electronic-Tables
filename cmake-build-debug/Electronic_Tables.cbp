@@ -106,10 +106,28 @@
 		<Unit filename="D:/FMI/Electronic-Tables/FileCommand.h">
 			<Option target="Electronic_Tables"/>
 		</Unit>
+		<Unit filename="D:/FMI/Electronic-Tables/FormulaCell.cpp">
+			<Option target="Electronic_Tables"/>
+		</Unit>
+		<Unit filename="D:/FMI/Electronic-Tables/FormulaCell.h">
+			<Option target="Electronic_Tables"/>
+		</Unit>
 		<Unit filename="D:/FMI/Electronic-Tables/IntCell.cpp">
 			<Option target="Electronic_Tables"/>
 		</Unit>
 		<Unit filename="D:/FMI/Electronic-Tables/IntCell.h">
+			<Option target="Electronic_Tables"/>
+		</Unit>
+		<Unit filename="D:/FMI/Electronic-Tables/SRow.cpp">
+			<Option target="Electronic_Tables"/>
+		</Unit>
+		<Unit filename="D:/FMI/Electronic-Tables/SRow.h">
+			<Option target="Electronic_Tables"/>
+		</Unit>
+		<Unit filename="D:/FMI/Electronic-Tables/StringCell.cpp">
+			<Option target="Electronic_Tables"/>
+		</Unit>
+		<Unit filename="D:/FMI/Electronic-Tables/StringCell.h">
 			<Option target="Electronic_Tables"/>
 		</Unit>
 		<Unit filename="D:/FMI/Electronic-Tables/main.cpp">

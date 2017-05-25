@@ -230,6 +230,33 @@ FileCommand.cpp.s:
 	$(MAKE) -f CMakeFiles\Electronic_Tables.dir\build.make CMakeFiles/Electronic_Tables.dir/FileCommand.cpp.s
 .PHONY : FileCommand.cpp.s
 
+FormulaCell.obj: FormulaCell.cpp.obj
+
+.PHONY : FormulaCell.obj
+
+# target to build an object file
+FormulaCell.cpp.obj:
+	$(MAKE) -f CMakeFiles\Electronic_Tables.dir\build.make CMakeFiles/Electronic_Tables.dir/FormulaCell.cpp.obj
+.PHONY : FormulaCell.cpp.obj
+
+FormulaCell.i: FormulaCell.cpp.i
+
+.PHONY : FormulaCell.i
+
+# target to preprocess a source file
+FormulaCell.cpp.i:
+	$(MAKE) -f CMakeFiles\Electronic_Tables.dir\build.make CMakeFiles/Electronic_Tables.dir/FormulaCell.cpp.i
+.PHONY : FormulaCell.cpp.i
+
+FormulaCell.s: FormulaCell.cpp.s
+
+.PHONY : FormulaCell.s
+
+# target to generate assembly for a file
+FormulaCell.cpp.s:
+	$(MAKE) -f CMakeFiles\Electronic_Tables.dir\build.make CMakeFiles/Electronic_Tables.dir/FormulaCell.cpp.s
+.PHONY : FormulaCell.cpp.s
+
 IntCell.obj: IntCell.cpp.obj
 
 .PHONY : IntCell.obj
@@ -256,6 +283,60 @@ IntCell.s: IntCell.cpp.s
 IntCell.cpp.s:
 	$(MAKE) -f CMakeFiles\Electronic_Tables.dir\build.make CMakeFiles/Electronic_Tables.dir/IntCell.cpp.s
 .PHONY : IntCell.cpp.s
+
+SRow.obj: SRow.cpp.obj
+
+.PHONY : SRow.obj
+
+# target to build an object file
+SRow.cpp.obj:
+	$(MAKE) -f CMakeFiles\Electronic_Tables.dir\build.make CMakeFiles/Electronic_Tables.dir/SRow.cpp.obj
+.PHONY : SRow.cpp.obj
+
+SRow.i: SRow.cpp.i
+
+.PHONY : SRow.i
+
+# target to preprocess a source file
+SRow.cpp.i:
+	$(MAKE) -f CMakeFiles\Electronic_Tables.dir\build.make CMakeFiles/Electronic_Tables.dir/SRow.cpp.i
+.PHONY : SRow.cpp.i
+
+SRow.s: SRow.cpp.s
+
+.PHONY : SRow.s
+
+# target to generate assembly for a file
+SRow.cpp.s:
+	$(MAKE) -f CMakeFiles\Electronic_Tables.dir\build.make CMakeFiles/Electronic_Tables.dir/SRow.cpp.s
+.PHONY : SRow.cpp.s
+
+StringCell.obj: StringCell.cpp.obj
+
+.PHONY : StringCell.obj
+
+# target to build an object file
+StringCell.cpp.obj:
+	$(MAKE) -f CMakeFiles\Electronic_Tables.dir\build.make CMakeFiles/Electronic_Tables.dir/StringCell.cpp.obj
+.PHONY : StringCell.cpp.obj
+
+StringCell.i: StringCell.cpp.i
+
+.PHONY : StringCell.i
+
+# target to preprocess a source file
+StringCell.cpp.i:
+	$(MAKE) -f CMakeFiles\Electronic_Tables.dir\build.make CMakeFiles/Electronic_Tables.dir/StringCell.cpp.i
+.PHONY : StringCell.cpp.i
+
+StringCell.s: StringCell.cpp.s
+
+.PHONY : StringCell.s
+
+# target to generate assembly for a file
+StringCell.cpp.s:
+	$(MAKE) -f CMakeFiles\Electronic_Tables.dir\build.make CMakeFiles/Electronic_Tables.dir/StringCell.cpp.s
+.PHONY : StringCell.cpp.s
 
 main.obj: main.cpp.obj
 
@@ -305,9 +386,18 @@ help:
 	@echo ... FileCommand.obj
 	@echo ... FileCommand.i
 	@echo ... FileCommand.s
+	@echo ... FormulaCell.obj
+	@echo ... FormulaCell.i
+	@echo ... FormulaCell.s
 	@echo ... IntCell.obj
 	@echo ... IntCell.i
 	@echo ... IntCell.s
+	@echo ... SRow.obj
+	@echo ... SRow.i
+	@echo ... SRow.s
+	@echo ... StringCell.obj
+	@echo ... StringCell.i
+	@echo ... StringCell.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

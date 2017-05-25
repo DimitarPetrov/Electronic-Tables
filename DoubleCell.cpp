@@ -5,7 +5,7 @@
 #include "DoubleCell.h"
 #include <stdlib.h>
 
-DoubleCell::DoubleCell(const char *c) {
+DoubleCell::DoubleCell(const char *c):Cell(c) {
     content = formatFix(c);
 }
 
@@ -15,4 +15,8 @@ std::ostream &DoubleCell::Print(std::ostream &os) const {
 
 double DoubleCell::formatFix(const char *c) {
     return atof(c);
+}
+
+Cell *DoubleCell::Clone() const {
+    return new DoubleCell(rawContent);
 }

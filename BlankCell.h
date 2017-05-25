@@ -12,8 +12,10 @@ public:
     BlankCell(const char* c = "");
     virtual std::ostream& Print(std::ostream& os)const override;
     virtual ~BlankCell(){}
+    virtual Cell* Clone() const override;
+
 private:
-    char content[3];
+    char content[1];
     void formatFix(const char* rc);
 };
 

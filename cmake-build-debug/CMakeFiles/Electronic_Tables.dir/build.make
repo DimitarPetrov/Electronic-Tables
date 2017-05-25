@@ -200,6 +200,78 @@ CMakeFiles/Electronic_Tables.dir/DoubleCell.cpp.obj.provides: CMakeFiles/Electro
 CMakeFiles/Electronic_Tables.dir/DoubleCell.cpp.obj.provides.build: CMakeFiles/Electronic_Tables.dir/DoubleCell.cpp.obj
 
 
+CMakeFiles/Electronic_Tables.dir/StringCell.cpp.obj: CMakeFiles/Electronic_Tables.dir/flags.make
+CMakeFiles/Electronic_Tables.dir/StringCell.cpp.obj: ../StringCell.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\FMI\Electronic-Tables\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/Electronic_Tables.dir/StringCell.cpp.obj"
+	C:\MinGW\bin\g++.exe   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Electronic_Tables.dir\StringCell.cpp.obj -c D:\FMI\Electronic-Tables\StringCell.cpp
+
+CMakeFiles/Electronic_Tables.dir/StringCell.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Electronic_Tables.dir/StringCell.cpp.i"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\FMI\Electronic-Tables\StringCell.cpp > CMakeFiles\Electronic_Tables.dir\StringCell.cpp.i
+
+CMakeFiles/Electronic_Tables.dir/StringCell.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Electronic_Tables.dir/StringCell.cpp.s"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\FMI\Electronic-Tables\StringCell.cpp -o CMakeFiles\Electronic_Tables.dir\StringCell.cpp.s
+
+CMakeFiles/Electronic_Tables.dir/StringCell.cpp.obj.requires:
+
+.PHONY : CMakeFiles/Electronic_Tables.dir/StringCell.cpp.obj.requires
+
+CMakeFiles/Electronic_Tables.dir/StringCell.cpp.obj.provides: CMakeFiles/Electronic_Tables.dir/StringCell.cpp.obj.requires
+	$(MAKE) -f CMakeFiles\Electronic_Tables.dir\build.make CMakeFiles/Electronic_Tables.dir/StringCell.cpp.obj.provides.build
+.PHONY : CMakeFiles/Electronic_Tables.dir/StringCell.cpp.obj.provides
+
+CMakeFiles/Electronic_Tables.dir/StringCell.cpp.obj.provides.build: CMakeFiles/Electronic_Tables.dir/StringCell.cpp.obj
+
+
+CMakeFiles/Electronic_Tables.dir/FormulaCell.cpp.obj: CMakeFiles/Electronic_Tables.dir/flags.make
+CMakeFiles/Electronic_Tables.dir/FormulaCell.cpp.obj: ../FormulaCell.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\FMI\Electronic-Tables\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/Electronic_Tables.dir/FormulaCell.cpp.obj"
+	C:\MinGW\bin\g++.exe   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Electronic_Tables.dir\FormulaCell.cpp.obj -c D:\FMI\Electronic-Tables\FormulaCell.cpp
+
+CMakeFiles/Electronic_Tables.dir/FormulaCell.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Electronic_Tables.dir/FormulaCell.cpp.i"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\FMI\Electronic-Tables\FormulaCell.cpp > CMakeFiles\Electronic_Tables.dir\FormulaCell.cpp.i
+
+CMakeFiles/Electronic_Tables.dir/FormulaCell.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Electronic_Tables.dir/FormulaCell.cpp.s"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\FMI\Electronic-Tables\FormulaCell.cpp -o CMakeFiles\Electronic_Tables.dir\FormulaCell.cpp.s
+
+CMakeFiles/Electronic_Tables.dir/FormulaCell.cpp.obj.requires:
+
+.PHONY : CMakeFiles/Electronic_Tables.dir/FormulaCell.cpp.obj.requires
+
+CMakeFiles/Electronic_Tables.dir/FormulaCell.cpp.obj.provides: CMakeFiles/Electronic_Tables.dir/FormulaCell.cpp.obj.requires
+	$(MAKE) -f CMakeFiles\Electronic_Tables.dir\build.make CMakeFiles/Electronic_Tables.dir/FormulaCell.cpp.obj.provides.build
+.PHONY : CMakeFiles/Electronic_Tables.dir/FormulaCell.cpp.obj.provides
+
+CMakeFiles/Electronic_Tables.dir/FormulaCell.cpp.obj.provides.build: CMakeFiles/Electronic_Tables.dir/FormulaCell.cpp.obj
+
+
+CMakeFiles/Electronic_Tables.dir/SRow.cpp.obj: CMakeFiles/Electronic_Tables.dir/flags.make
+CMakeFiles/Electronic_Tables.dir/SRow.cpp.obj: ../SRow.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\FMI\Electronic-Tables\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/Electronic_Tables.dir/SRow.cpp.obj"
+	C:\MinGW\bin\g++.exe   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Electronic_Tables.dir\SRow.cpp.obj -c D:\FMI\Electronic-Tables\SRow.cpp
+
+CMakeFiles/Electronic_Tables.dir/SRow.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Electronic_Tables.dir/SRow.cpp.i"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\FMI\Electronic-Tables\SRow.cpp > CMakeFiles\Electronic_Tables.dir\SRow.cpp.i
+
+CMakeFiles/Electronic_Tables.dir/SRow.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Electronic_Tables.dir/SRow.cpp.s"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\FMI\Electronic-Tables\SRow.cpp -o CMakeFiles\Electronic_Tables.dir\SRow.cpp.s
+
+CMakeFiles/Electronic_Tables.dir/SRow.cpp.obj.requires:
+
+.PHONY : CMakeFiles/Electronic_Tables.dir/SRow.cpp.obj.requires
+
+CMakeFiles/Electronic_Tables.dir/SRow.cpp.obj.provides: CMakeFiles/Electronic_Tables.dir/SRow.cpp.obj.requires
+	$(MAKE) -f CMakeFiles\Electronic_Tables.dir\build.make CMakeFiles/Electronic_Tables.dir/SRow.cpp.obj.provides.build
+.PHONY : CMakeFiles/Electronic_Tables.dir/SRow.cpp.obj.provides
+
+CMakeFiles/Electronic_Tables.dir/SRow.cpp.obj.provides.build: CMakeFiles/Electronic_Tables.dir/SRow.cpp.obj
+
+
 # Object files for target Electronic_Tables
 Electronic_Tables_OBJECTS = \
 "CMakeFiles/Electronic_Tables.dir/main.cpp.obj" \
@@ -207,7 +279,10 @@ Electronic_Tables_OBJECTS = \
 "CMakeFiles/Electronic_Tables.dir/Cell.cpp.obj" \
 "CMakeFiles/Electronic_Tables.dir/BlankCell.cpp.obj" \
 "CMakeFiles/Electronic_Tables.dir/IntCell.cpp.obj" \
-"CMakeFiles/Electronic_Tables.dir/DoubleCell.cpp.obj"
+"CMakeFiles/Electronic_Tables.dir/DoubleCell.cpp.obj" \
+"CMakeFiles/Electronic_Tables.dir/StringCell.cpp.obj" \
+"CMakeFiles/Electronic_Tables.dir/FormulaCell.cpp.obj" \
+"CMakeFiles/Electronic_Tables.dir/SRow.cpp.obj"
 
 # External object files for target Electronic_Tables
 Electronic_Tables_EXTERNAL_OBJECTS =
@@ -218,11 +293,14 @@ Electronic_Tables.exe: CMakeFiles/Electronic_Tables.dir/Cell.cpp.obj
 Electronic_Tables.exe: CMakeFiles/Electronic_Tables.dir/BlankCell.cpp.obj
 Electronic_Tables.exe: CMakeFiles/Electronic_Tables.dir/IntCell.cpp.obj
 Electronic_Tables.exe: CMakeFiles/Electronic_Tables.dir/DoubleCell.cpp.obj
+Electronic_Tables.exe: CMakeFiles/Electronic_Tables.dir/StringCell.cpp.obj
+Electronic_Tables.exe: CMakeFiles/Electronic_Tables.dir/FormulaCell.cpp.obj
+Electronic_Tables.exe: CMakeFiles/Electronic_Tables.dir/SRow.cpp.obj
 Electronic_Tables.exe: CMakeFiles/Electronic_Tables.dir/build.make
 Electronic_Tables.exe: CMakeFiles/Electronic_Tables.dir/linklibs.rsp
 Electronic_Tables.exe: CMakeFiles/Electronic_Tables.dir/objects1.rsp
 Electronic_Tables.exe: CMakeFiles/Electronic_Tables.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=D:\FMI\Electronic-Tables\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable Electronic_Tables.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=D:\FMI\Electronic-Tables\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX executable Electronic_Tables.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\Electronic_Tables.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -236,6 +314,9 @@ CMakeFiles/Electronic_Tables.dir/requires: CMakeFiles/Electronic_Tables.dir/Cell
 CMakeFiles/Electronic_Tables.dir/requires: CMakeFiles/Electronic_Tables.dir/BlankCell.cpp.obj.requires
 CMakeFiles/Electronic_Tables.dir/requires: CMakeFiles/Electronic_Tables.dir/IntCell.cpp.obj.requires
 CMakeFiles/Electronic_Tables.dir/requires: CMakeFiles/Electronic_Tables.dir/DoubleCell.cpp.obj.requires
+CMakeFiles/Electronic_Tables.dir/requires: CMakeFiles/Electronic_Tables.dir/StringCell.cpp.obj.requires
+CMakeFiles/Electronic_Tables.dir/requires: CMakeFiles/Electronic_Tables.dir/FormulaCell.cpp.obj.requires
+CMakeFiles/Electronic_Tables.dir/requires: CMakeFiles/Electronic_Tables.dir/SRow.cpp.obj.requires
 
 .PHONY : CMakeFiles/Electronic_Tables.dir/requires
 

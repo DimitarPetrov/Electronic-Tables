@@ -15,14 +15,28 @@ CMakeFiles/Electronic_Tables.dir/DoubleCell.cpp.obj: ../DoubleCell.h
 CMakeFiles/Electronic_Tables.dir/FileCommand.cpp.obj: ../FileCommand.cpp
 CMakeFiles/Electronic_Tables.dir/FileCommand.cpp.obj: ../FileCommand.h
 
+CMakeFiles/Electronic_Tables.dir/FormulaCell.cpp.obj: ../Cell.h
+CMakeFiles/Electronic_Tables.dir/FormulaCell.cpp.obj: ../FormulaCell.cpp
+CMakeFiles/Electronic_Tables.dir/FormulaCell.cpp.obj: ../FormulaCell.h
+
 CMakeFiles/Electronic_Tables.dir/IntCell.cpp.obj: ../Cell.h
 CMakeFiles/Electronic_Tables.dir/IntCell.cpp.obj: ../IntCell.cpp
 CMakeFiles/Electronic_Tables.dir/IntCell.cpp.obj: ../IntCell.h
+
+CMakeFiles/Electronic_Tables.dir/SRow.cpp.obj: ../Cell.h
+CMakeFiles/Electronic_Tables.dir/SRow.cpp.obj: ../SRow.cpp
+CMakeFiles/Electronic_Tables.dir/SRow.cpp.obj: ../SRow.h
+
+CMakeFiles/Electronic_Tables.dir/StringCell.cpp.obj: ../Cell.h
+CMakeFiles/Electronic_Tables.dir/StringCell.cpp.obj: ../StringCell.cpp
+CMakeFiles/Electronic_Tables.dir/StringCell.cpp.obj: ../StringCell.h
 
 CMakeFiles/Electronic_Tables.dir/main.cpp.obj: ../BlankCell.h
 CMakeFiles/Electronic_Tables.dir/main.cpp.obj: ../Cell.h
 CMakeFiles/Electronic_Tables.dir/main.cpp.obj: ../DoubleCell.h
 CMakeFiles/Electronic_Tables.dir/main.cpp.obj: ../FileCommand.h
 CMakeFiles/Electronic_Tables.dir/main.cpp.obj: ../IntCell.h
+CMakeFiles/Electronic_Tables.dir/main.cpp.obj: ../SRow.h
+CMakeFiles/Electronic_Tables.dir/main.cpp.obj: ../StringCell.h
 CMakeFiles/Electronic_Tables.dir/main.cpp.obj: ../main.cpp
 

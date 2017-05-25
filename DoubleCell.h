@@ -13,6 +13,7 @@ public:
     virtual std::ostream& Print(std::ostream& os) const override;
 
     virtual ~DoubleCell(){}
+    virtual Cell* Clone() const override;
 private:
     double content;
 

@@ -4,16 +4,18 @@
 
 #include "BlankCell.h"
 
-BlankCell::BlankCell(const char* c) {
+BlankCell::BlankCell(const char* c):Cell(c) {
     formatFix(c);
 }
 
 void BlankCell::formatFix(const char *c) {
-    content[0] = ',';
-    content[1] = ',';
-    content[2] = '\0';
+    content[0] = '\0';
 }
 
 std::ostream &BlankCell::Print(std::ostream &os) const {
     return os<<content;
+}
+
+Cell *BlankCell::Clone() const {
+    return new BlankCell();
 }

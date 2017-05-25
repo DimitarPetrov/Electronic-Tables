@@ -5,6 +5,8 @@
 #include "BlankCell.h"
 #include "IntCell.h"
 #include "DoubleCell.h"
+#include "StringCell.h"
+#include "SRow.h"
 using namespace std;
 
 void FileCommands(){
@@ -71,7 +73,11 @@ void FileCommands(){
 }
 
 int main() {
-    DoubleCell a("  1.33  ");
+    SRow a;
+    a.add(new BlankCell());
+    a.add(new DoubleCell(" 124.42"));
+    a.add(new StringCell( " asfa a  s  "));
+    a.add(new IntCell( "  12  "));
     cout<<a;
     return 0;
 }

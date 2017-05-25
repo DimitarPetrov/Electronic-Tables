@@ -6,7 +6,7 @@
 #include <stdlib.h>
 
 
-IntCell::IntCell(const char *c){
+IntCell::IntCell(const char *c):Cell(c){
     content = formatFix(c);
 }
 
@@ -17,3 +17,9 @@ std::ostream &IntCell::Print(std::ostream &os) const {
 int IntCell::formatFix(const char *c) {
     return atoi(c);
 }
+
+Cell *IntCell::Clone() const {
+    return new IntCell(rawContent);
+}
+
+
