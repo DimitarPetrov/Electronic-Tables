@@ -8,6 +8,7 @@
 #include "IntCell.h"
 #include "DoubleCell.h"
 #include "StringCell.h"
+#include "BlankCell.h"
 #include <cstring>
 #include <cmath>
 
@@ -181,4 +182,31 @@ void Spreadsheet::FinalState() {
             }
         }
     }
+}
+
+void Spreadsheet::Edit(int row, int col, char* a) {
+    if(isInt(a)){
+        delete sheet[row].getRow()[col];
+        sheet[row].getRow()[col] = new IntCell(a);
+    }
+    else if(isDouble(a)){
+        delete sheet[row].getRow()[col];
+        sheet[row].getRow()[col] = new DoubleCell(a);
+    }
+    else if(isString(a)){
+        delete sheet[row].getRow()[col];
+        sheet[row].getRow()[col] = new StringCell(a);
+    }
+    else if(isFormula(a)){
+        delete sheet[row].getRow()[col];
+        sheet[row].getRow()[col] = new FormulaCell(a);
+    }
+    else if(a == ""){
+        delete sheet[row].getRow()[col];
+        sheet[row].getRow()[col] = new BlankCell(a);
+    }
+    else{
+        std::cout<<"Unknown Data Type... nothing was changed!"<<std::endl;
+    }
+
 }

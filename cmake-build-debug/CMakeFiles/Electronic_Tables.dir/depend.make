@@ -37,6 +37,7 @@ CMakeFiles/Electronic_Tables.dir/SRow.cpp.obj: ../SRow.cpp
 CMakeFiles/Electronic_Tables.dir/SRow.cpp.obj: ../SRow.h
 CMakeFiles/Electronic_Tables.dir/SRow.cpp.obj: ../StringCell.h
 
+CMakeFiles/Electronic_Tables.dir/Spreadsheet.cpp.obj: ../BlankCell.h
 CMakeFiles/Electronic_Tables.dir/Spreadsheet.cpp.obj: ../Cell.h
 CMakeFiles/Electronic_Tables.dir/Spreadsheet.cpp.obj: ../DoubleCell.h
 CMakeFiles/Electronic_Tables.dir/Spreadsheet.cpp.obj: ../FormulaCell.h

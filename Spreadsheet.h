@@ -21,6 +21,8 @@ public:
 
     void FinalState();
 
+    void Edit(int row, int col, char* a);
+
 private:
     SRow* sheet;
     int current;

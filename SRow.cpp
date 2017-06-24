@@ -117,6 +117,7 @@ std::istream &operator>>(std::istream &is, SRow &a) {
         }
     }
     a.RecognizeCell(cell);
+    return is;
 }
 
 
@@ -137,6 +138,7 @@ void SRow::RecognizeCell(char *cell) {
     else if(isFormula(cell)){
         this->add(new FormulaCell(cell));
     }
+    //TODO:da napravq validaciq na vhoda!
 }
 
 Cell **SRow::getRow() const {
