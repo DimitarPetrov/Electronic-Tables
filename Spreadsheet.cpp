@@ -7,6 +7,7 @@
 #include "FormulaCell.h"
 #include "IntCell.h"
 #include "DoubleCell.h"
+#include "StringCell.h"
 #include <cstring>
 #include <cmath>
 
@@ -110,6 +111,9 @@ double Spreadsheet::CalculateFormula(char *cell) {
         return ConvertToNumber(left) * ConvertToNumber(right);
     }
     if(op == '/'){
+        if(ConvertToNumber(right) == 0){
+            throw "Error";
+        }
         return ConvertToNumber(left) / ConvertToNumber(right);
     }
     if(op == '^'){
@@ -144,6 +148,9 @@ double Spreadsheet::ConvertToNumber(char *a) {
             }
 
         }
+        if(atoi(row)-1 > current || atoi(col) > sheet[atoi(row)-1].getCurrent()){
+            return 0;
+        }
         return ConvertToNumber(sheet[atoi(row)-1].getRow()[atoi(col)-1]->getRawContent());
     }
     return 0;
@@ -155,16 +162,21 @@ void Spreadsheet::FinalState() {
     for(int i = 0; i<current; ++i){
         for(int j = 0; j<sheet[i].getCurrent(); ++j){
             if(dynamic_cast<FormulaCell*>(sheet[i].getRow()[j])){
-                a = CalculateFormula(sheet[i].getRow()[j]->getRawContent());
-                std::cout<<a<<std::endl;
-                b = a;
-                if(a - b == 0.0){
-                    delete sheet[i].getRow()[j];
-                    sheet[i].getRow()[j] = new IntCell(b);
+                try {
+                    a = CalculateFormula(sheet[i].getRow()[j]->getRawContent());
+                    b = a;
+                    if(a - b == 0.0){
+                        delete sheet[i].getRow()[j];
+                        sheet[i].getRow()[j] = new IntCell(b);
+                    }
+                    else{
+                        delete sheet[i].getRow()[j];
+                        sheet[i].getRow()[j] = new DoubleCell(a);
+                    }
                 }
-                else{
+                catch (const char*){
                     delete sheet[i].getRow()[j];
-                    sheet[i].getRow()[j] = new DoubleCell(a);
+                    sheet[i].getRow()[j] = new StringCell("ERROR");
                 }
             }
         }
