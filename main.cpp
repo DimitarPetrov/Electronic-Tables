@@ -74,6 +74,9 @@ void FileCommands(){
 }
 
 int main() {
-
+    Spreadsheet ss;
+    ifstream inf("D:\\FMI\\Electronic-Tables\\test.txt");
+    inf>>ss;
+    cout<<ss;
     return 0;
 }

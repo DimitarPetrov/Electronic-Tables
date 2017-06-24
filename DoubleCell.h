@@ -10,6 +10,7 @@
 class DoubleCell: public Cell {
 public:
     DoubleCell(const char* c = "");
+    DoubleCell(double a);
     virtual std::ostream& Print(std::ostream& os) const override;
 
     virtual ~DoubleCell(){}

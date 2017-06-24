@@ -10,6 +10,7 @@
 class IntCell: public Cell {
 public:
     IntCell(const char* c = "");
+    IntCell(int a);
     virtual std::ostream& Print(std::ostream& os) const override;
     virtual ~IntCell(){}
 

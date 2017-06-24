@@ -24,6 +24,7 @@ public:
     friend std::ostream& operator<<(std::ostream& out, const SRow& a);
     friend std::istream& operator>>(std::istream& is, SRow& a);
 
+    int getCurrent() const;
     Cell **getRow() const;
 
 private:

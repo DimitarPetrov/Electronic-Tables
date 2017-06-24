@@ -143,4 +143,8 @@ Cell **SRow::getRow() const {
     return row;
 }
 
+int SRow::getCurrent() const {
+    return current;
+}
+
 

@@ -19,7 +19,7 @@ public:
     friend std::ostream&operator<<(std::ostream& os, const Spreadsheet& ss);
     friend std::istream& operator>>(std::istream& in , Spreadsheet& ss);
 
-
+    void FinalState();
 
 private:
     SRow* sheet;

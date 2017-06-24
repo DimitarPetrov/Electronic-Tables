@@ -24,3 +24,7 @@ Cell *DoubleCell::Clone() const {
 double DoubleCell::getContent() const {
     return content;
 }
+
+DoubleCell::DoubleCell(double a):Cell(""), content(a) {
+
+}

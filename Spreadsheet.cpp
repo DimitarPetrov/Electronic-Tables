@@ -4,6 +4,9 @@
 
 #include "Spreadsheet.h"
 #include "Recognition.h"
+#include "FormulaCell.h"
+#include "IntCell.h"
+#include "DoubleCell.h"
 #include <cstring>
 #include <cmath>
 
@@ -71,6 +74,7 @@ std::istream &operator>>(std::istream &in, Spreadsheet &ss) {
         ss.add(buffer);
         buffer.empty();
     }
+    ss.FinalState();
     return in;
 }
 
@@ -140,7 +144,29 @@ double Spreadsheet::ConvertToNumber(char *a) {
             }
 
         }
-        return ConvertToNumber(sheet[atoi(row)].getRow()[atoi(col)]->getRawContent());
+        return ConvertToNumber(sheet[atoi(row)-1].getRow()[atoi(col)-1]->getRawContent());
     }
     return 0;
+}
+
+void Spreadsheet::FinalState() {
+    double a;
+    int b;
+    for(int i = 0; i<current; ++i){
+        for(int j = 0; j<sheet[i].getCurrent(); ++j){
+            if(dynamic_cast<FormulaCell*>(sheet[i].getRow()[j])){
+                a = CalculateFormula(sheet[i].getRow()[j]->getRawContent());
+                std::cout<<a<<std::endl;
+                b = a;
+                if(a - b == 0.0){
+                    delete sheet[i].getRow()[j];
+                    sheet[i].getRow()[j] = new IntCell(b);
+                }
+                else{
+                    delete sheet[i].getRow()[j];
+                    sheet[i].getRow()[j] = new DoubleCell(a);
+                }
+            }
+        }
+    }
 }

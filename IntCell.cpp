@@ -26,4 +26,7 @@ int IntCell::getContent() const {
     return content;
 }
 
+IntCell::IntCell(int a):Cell(""), content(a) {
+}
+
 
