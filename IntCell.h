@@ -12,6 +12,9 @@ public:
     IntCell(const char* c = "");
     virtual std::ostream& Print(std::ostream& os) const override;
     virtual ~IntCell(){}
+
+    int getContent() const;
+
     virtual Cell* Clone() const override;
 
 private:

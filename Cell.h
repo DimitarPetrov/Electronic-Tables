@@ -18,6 +18,8 @@ public:
 
     virtual Cell* Clone() const = 0;
 
+    char *getRawContent() const;
+
     virtual ~Cell();
 
 protected:

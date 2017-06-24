@@ -39,3 +39,7 @@ void Cell::Copy(const Cell &c) {
 std::ostream& operator<<(std::ostream &os, const Cell &c) {
     return c.Print(os);
 }
+
+char *Cell::getRawContent() const {
+    return rawContent;
+}

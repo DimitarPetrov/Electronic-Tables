@@ -3,6 +3,9 @@
 //
 
 #include "Spreadsheet.h"
+#include "Recognition.h"
+#include <cstring>
+#include <cmath>
 
 Spreadsheet::Spreadsheet() {
     sheet = new SRow[10];
@@ -59,4 +62,85 @@ std::ostream& operator<<(std::ostream& os, const Spreadsheet& ss){
         os<<ss.sheet[i]<<std::endl;
     }
     return os;
+}
+
+std::istream &operator>>(std::istream &in, Spreadsheet &ss) {
+    SRow buffer;
+    while(in){
+        in>>buffer;
+        ss.add(buffer);
+        buffer.empty();
+    }
+    return in;
+}
+
+
+double Spreadsheet::CalculateFormula(char *cell) {
+    char left [32] = { 0 };
+    char right [32] = { 0 };
+    char op;
+    int j = 0;
+    bool flag = false;
+    for(int i = 1; i<strlen(cell); ++i){
+        if((cell[i] != '+' && cell[i] != '-' && cell[i] !=  '*' && cell[i] != '/' && cell[i] != '^') && !flag){
+            left[j] = cell[i];
+            j++;
+        }
+        if(cell[i] == '+' || cell[i] == '-' || cell[i] ==  '*' || cell[i] == '/' || cell[i] == '^'){
+            op = cell[i];
+            flag = true;
+            j = 0;
+        }
+        if((cell[i] != '+' && cell[i] != '-' && cell[i] !=  '*' && cell[i] != '/' && cell[i] != '^') && flag){
+            right[j] = cell[i];
+            j++;
+        }
+    }
+    if(op == '+'){
+        return ConvertToNumber(left) + ConvertToNumber(right);
+    }
+    if(op == '-'){
+        return ConvertToNumber(left) - ConvertToNumber(right);
+    }
+    if(op == '*'){
+        return ConvertToNumber(left) * ConvertToNumber(right);
+    }
+    if(op == '/'){
+        return ConvertToNumber(left) / ConvertToNumber(right);
+    }
+    if(op == '^'){
+        return pow(ConvertToNumber(left), ConvertToNumber(right));
+    }
+}
+
+double Spreadsheet::ConvertToNumber(char *a) {
+    if(isInt(a)){
+        return atoi(a);
+    }
+    if(isDouble(a)){
+        return atof(a);
+    }
+    if(isCellPath(a)){
+        bool flag = false;
+        char row [16] = { 0 };
+        char col [16] = { 0 };
+        int j = 0;
+        for(int i=1; i<strlen(a); ++i){
+            if(isdigit(a[i]) && !flag){
+                row[j] = a[i];
+                ++j;
+            }
+            if(a[i] == 'C'){
+                flag = true;
+                j = 0;
+            }
+            if(isdigit(a[i]) && flag){
+                col[j] = a[i];
+                ++j;
+            }
+
+        }
+        return ConvertToNumber(sheet[atoi(row)].getRow()[atoi(col)]->getRawContent());
+    }
+    return 0;
 }

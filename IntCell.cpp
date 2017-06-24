@@ -22,4 +22,8 @@ Cell *IntCell::Clone() const {
     return new IntCell(rawContent);
 }
 
+int IntCell::getContent() const {
+    return content;
+}
+
 

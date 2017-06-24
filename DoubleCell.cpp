@@ -20,3 +20,7 @@ double DoubleCell::formatFix(const char *c) {
 Cell *DoubleCell::Clone() const {
     return new DoubleCell(rawContent);
 }
+
+double DoubleCell::getContent() const {
+    return content;
+}

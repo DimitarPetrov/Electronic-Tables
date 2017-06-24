@@ -9,8 +9,15 @@
 
 class FormulaCell: public Cell {
 public:
+    FormulaCell(const char* c = "");
+    virtual std::ostream& Print(std::ostream& os) const override;
+    virtual Cell* Clone() const override;
+    virtual ~FormulaCell();
+
+
 
 private:
+
 
 };
 

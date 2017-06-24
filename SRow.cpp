@@ -11,6 +11,7 @@
 #include "StringCell.h"
 #include <ctype.h>
 #include <fstream>
+#include "Recognition.h"
 
 SRow::SRow() {
     row = new Cell* [10];
@@ -98,92 +99,48 @@ std::ostream &operator<<(std::ostream &out, const SRow &a) {
 }
 
 std::istream &operator>>(std::istream &is, SRow &a) {
-    char buffer [256];
-    while(is.getline(buffer, 256, ',')) {
-        std::cout<<buffer<<"\n------------\n";
-        if(buffer[0] == 0 || (buffer[0] == ' ' && buffer[1] == '\0')){
-            a.add(new BlankCell());
+    char buffer [512];
+    char cell[128] = { 0 };
+    is.getline(buffer, 512);
+    int j = 0;
+    for(int i = 0; i<strlen(buffer); ++i){
+        if(buffer[i] != ','){
+            cell[j] = buffer[i];
+            ++j;
         }
-        else if(isDouble(buffer)){
-            a.add(new DoubleCell(buffer));
-        }
-        else if(isInt(buffer)){
-            a.add(new IntCell(buffer));
-        }
-        else if(isString(buffer)){
-            a.add(new StringCell(buffer));
-        }
-//        else if(isFormula(buffer)){
-//            a.add(new FormulaCell(buffer));
-//        }
-
-
-    }
-}
-
-void ClearWhitespaces(char* a){
-    for(int i = strlen(a)-1; a[i]== ' '; --i){
-        a[i] = 0;
-    }
-    for(int i = 0; i < strlen(a) && a[i] == ' ';){
-        for(int j = i; j < strlen(a)-1; ++j){
-            a[j] = a[j+1];
-        }
-        a[strlen(a)-1] = 0;
-    }
-}
-
-bool isInt(char* a){
-    bool flag = false;
-    if(a[0] == '\0'){
-        return 0;
-    }
-    ClearWhitespaces(a);
-    for(int i = 1; i<strlen(a); ++i){
-        if(!isdigit(a[i]) && !(isdigit(a[0]) || a[0] == '+' || a[0] == '-')){
-            return 0;
-        }
-        flag = true;
-    }
-    return flag;
-}
-
-bool isString(char* a){
-    ClearWhitespaces(a);
-    if(a[0] == '\"' && a[strlen(a)-1] == '\"'){
-        return 1;
-    }
-    return 0;
-}
-
-bool isFormula(char* a){
-    ClearWhitespaces(a);
-    if(a[0] == '='){
-        return 1;
-    }
-    return 0;
-}
-
-bool isDouble(char* a){
-    int countpts = 0;
-    if(a[0] == '\0') return 0;
-    ClearWhitespaces(a);
-    if(isdigit(a[0]) || a[0] == '+' || a[0] == '-') {
-        for(int i = 1; i < strlen(a); ++i) {
-            if(a[i] == '.'){
-                ++countpts;
+        if(buffer[i] == ','){
+            a.RecognizeCell(cell);
+            for(int k = 0; k<strlen(cell); ++k){
+                cell[k] = 0;
             }
+            j = 0;
         }
-        if(countpts > 1 || countpts == 0){
-            return 0;
-        }
-        for(int i = 1; i<strlen(a); ++i){
-            if(!isdigit(a[i]) && a[i] != '.'){
-                return 0;
-            }
-        }
-    } else{
-        return 0;
     }
-    return 1;
+    a.RecognizeCell(cell);
 }
+
+
+
+void SRow::RecognizeCell(char *cell) {
+    if(cell[0] == 0 || (cell[0] == ' ' && cell[1] == '\0')){
+        this->add(new BlankCell());
+    }
+    else if(isDouble(cell)){
+        this->add(new DoubleCell(cell));
+    }
+    else if(isInt(cell)){
+        this->add(new IntCell(cell));
+    }
+    else if(isString(cell)){
+        this->add(new StringCell(cell));
+    }
+    else if(isFormula(cell)){
+        this->add(new FormulaCell(cell));
+    }
+}
+
+Cell **SRow::getRow() const {
+    return row;
+}
+
+

@@ -14,6 +14,9 @@ public:
     StringCell&operator=(const StringCell& sc);
     virtual std::ostream& Print(std::ostream& os)const override;
     virtual Cell* Clone() const override;
+
+    char *getContent() const;
+
     virtual ~StringCell();
 
 private:

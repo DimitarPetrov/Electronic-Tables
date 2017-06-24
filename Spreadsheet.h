@@ -17,6 +17,8 @@ public:
     void add(const SRow& sr);
 
     friend std::ostream&operator<<(std::ostream& os, const Spreadsheet& ss);
+    friend std::istream& operator>>(std::istream& in , Spreadsheet& ss);
+
 
 
 private:
@@ -26,6 +28,9 @@ private:
 
     void resize();
     void Copy(const Spreadsheet& ss);
+
+    double CalculateFormula(char* cell);
+    double ConvertToNumber(char* a);
 };
 
 

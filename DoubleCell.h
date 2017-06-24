@@ -14,6 +14,9 @@ public:
 
     virtual ~DoubleCell(){}
     virtual Cell* Clone() const override;
+
+    double getContent() const;
+
 private:
     double content;
 

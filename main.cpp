@@ -74,9 +74,6 @@ void FileCommands(){
 }
 
 int main() {
-    SRow a;
-    ifstream inf("D:\\FMI\\Electronic-Tables\\test.txt");
-    inf>>a;
-    cout<<a;
+
     return 0;
 }

@@ -14,6 +14,8 @@ public:
     virtual ~BlankCell(){}
     virtual Cell* Clone() const override;
 
+    const char *getContent() const;
+
 private:
     char content[1];
     void formatFix(const char* rc);

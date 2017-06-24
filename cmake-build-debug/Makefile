@@ -284,6 +284,33 @@ IntCell.cpp.s:
 	$(MAKE) -f CMakeFiles\Electronic_Tables.dir\build.make CMakeFiles/Electronic_Tables.dir/IntCell.cpp.s
 .PHONY : IntCell.cpp.s
 
+Recognition.obj: Recognition.cpp.obj
+
+.PHONY : Recognition.obj
+
+# target to build an object file
+Recognition.cpp.obj:
+	$(MAKE) -f CMakeFiles\Electronic_Tables.dir\build.make CMakeFiles/Electronic_Tables.dir/Recognition.cpp.obj
+.PHONY : Recognition.cpp.obj
+
+Recognition.i: Recognition.cpp.i
+
+.PHONY : Recognition.i
+
+# target to preprocess a source file
+Recognition.cpp.i:
+	$(MAKE) -f CMakeFiles\Electronic_Tables.dir\build.make CMakeFiles/Electronic_Tables.dir/Recognition.cpp.i
+.PHONY : Recognition.cpp.i
+
+Recognition.s: Recognition.cpp.s
+
+.PHONY : Recognition.s
+
+# target to generate assembly for a file
+Recognition.cpp.s:
+	$(MAKE) -f CMakeFiles\Electronic_Tables.dir\build.make CMakeFiles/Electronic_Tables.dir/Recognition.cpp.s
+.PHONY : Recognition.cpp.s
+
 SRow.obj: SRow.cpp.obj
 
 .PHONY : SRow.obj
@@ -419,6 +446,9 @@ help:
 	@echo ... IntCell.obj
 	@echo ... IntCell.i
 	@echo ... IntCell.s
+	@echo ... Recognition.obj
+	@echo ... Recognition.i
+	@echo ... Recognition.s
 	@echo ... SRow.obj
 	@echo ... SRow.i
 	@echo ... SRow.s

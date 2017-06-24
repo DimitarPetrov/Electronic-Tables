@@ -19,3 +19,7 @@ std::ostream &BlankCell::Print(std::ostream &os) const {
 Cell *BlankCell::Clone() const {
     return new BlankCell();
 }
+
+const char *BlankCell::getContent() const {
+    return content;
+}

@@ -55,3 +55,7 @@ void StringCell::Copy(const StringCell &sc) {
 Cell *StringCell::Clone() const {
     return new StringCell(rawContent);
 }
+
+char *StringCell::getContent() const {
+    return content;
+}
