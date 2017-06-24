@@ -210,3 +210,11 @@ void Spreadsheet::Edit(int row, int col, char* a) {
     }
 
 }
+
+void Spreadsheet::empty() {
+    for(int i = 0; i<current; ++i){
+        sheet[i].empty();
+    }
+    current = 0;
+
+}

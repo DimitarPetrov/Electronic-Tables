@@ -138,7 +138,11 @@ void SRow::RecognizeCell(char *cell) {
     else if(isFormula(cell)){
         this->add(new FormulaCell(cell));
     }
-    //TODO:da napravq validaciq na vhoda!
+    else{
+        char exeption[128] = { 0 };
+        strcpy(exeption, cell);
+        throw exeption;
+    }
 }
 
 Cell **SRow::getRow() const {

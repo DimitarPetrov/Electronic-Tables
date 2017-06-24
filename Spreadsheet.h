@@ -15,6 +15,7 @@ public:
     ~Spreadsheet();
 
     void add(const SRow& sr);
+    void empty();
 
     friend std::ostream&operator<<(std::ostream& os, const Spreadsheet& ss);
     friend std::istream& operator>>(std::istream& in , Spreadsheet& ss);
