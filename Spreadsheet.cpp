@@ -11,6 +11,8 @@
 #include "BlankCell.h"
 #include <cstring>
 #include <cmath>
+#include <iomanip>
+#include <iostream>
 
 Spreadsheet::Spreadsheet() {
     sheet = new SRow[10];
@@ -71,8 +73,23 @@ std::ostream& operator<<(std::ostream& os, const Spreadsheet& ss){
 
 std::istream &operator>>(std::istream &in, Spreadsheet &ss) {
     SRow buffer;
-    while(in){
+    int columns = 0;
+    while(!in.eof()){
         in>>buffer;
+        if(buffer.getCurrent() < columns){
+            for(int i = 0; i<columns - buffer.getCurrent(); ++i){
+                buffer.add(new BlankCell());
+            }
+        }
+        if(buffer.getCurrent() > columns){
+            columns = buffer.getCurrent();
+            for(int i = 0; i<ss.current; ++i){
+                int tmp = columns - ss.sheet[i].getCurrent();
+                for(int j = 0; j<tmp; ++j){
+                    ss.sheet[i].add(new BlankCell());
+                }
+            }
+        }
         ss.add(buffer);
         buffer.empty();
     }
@@ -217,4 +234,24 @@ void Spreadsheet::empty() {
     }
     current = 0;
 
+}
+
+void Spreadsheet::Print() const {
+    int* collen = new int[sheet[0].getCurrent()];
+    int currmax = 0;
+    for(int i = 0; i<sheet[0].getCurrent(); ++i){
+        for(int j = 0; j<current; ++j){
+            if(strlen(sheet[j].getRow()[i]->getRawContent()) > currmax){
+                currmax = strlen(sheet[j].getRow()[i]->getRawContent());
+            }
+        }
+        collen[i] = currmax;
+        currmax = 0;
+    }
+    for(int i = 0; i < current; ++i){
+        for(int j = 0; j<sheet[i].getCurrent(); ++j){
+            std::cout<<std::left<<std::setw(collen[j])<<*sheet[i].getRow()[j]<< " | ";
+        }
+        std::cout<<std::endl;
+    }
 }

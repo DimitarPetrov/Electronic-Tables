@@ -23,6 +23,7 @@ public:
     void FinalState();
 
     void Edit(int row, int col, char* a);
+    void Print() const;
 
 private:
     SRow* sheet;

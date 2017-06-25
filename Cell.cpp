@@ -7,10 +7,12 @@
 
 #include <iostream>
 #include <cstring>
+#include "Recognition.h"
 
 Cell::Cell(const char *rc) {
     rawContent = new char[strlen(rc) + 1];
     strcpy(rawContent, rc);
+    ClearWhitespaces(rawContent);
 }
 
 Cell::Cell(const Cell &c) {
@@ -33,6 +35,7 @@ Cell::~Cell() {
 void Cell::Copy(const Cell &c) {
     rawContent = new char[strlen(c.rawContent) + 1];
     strcpy(rawContent, c.rawContent);
+    ClearWhitespaces(rawContent);
 }
 
 

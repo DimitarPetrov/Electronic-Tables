@@ -78,7 +78,7 @@ void FileCommands(Spreadsheet& ss) {
                         cout << "Cell on row " << row << " and column " << col << " edited successfuly" << endl;
                     }
                     if (a == FileCommand("print")) {
-                        cout << ss;
+                        ss.Print();
                     }
 
                 }

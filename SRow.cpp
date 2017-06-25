@@ -110,7 +110,7 @@ std::istream &operator>>(std::istream &is, SRow &a) {
         }
         if(buffer[i] == ','){
             a.RecognizeCell(cell);
-            for(int k = 0; k<strlen(cell); ++k){
+            for(int k = 0; k<128; ++k){
                 cell[k] = 0;
             }
             j = 0;
