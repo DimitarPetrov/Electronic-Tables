@@ -19,8 +19,9 @@ public:
     double getContent() const;
 
 private:
+    //член данна пазеща обработеното съдържание на клетката.
     double content;
-
+    //функция обработваща съдържанието на клетката.
     double formatFix(const char* c);
 };
 

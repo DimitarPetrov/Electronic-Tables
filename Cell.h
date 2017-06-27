@@ -6,7 +6,7 @@
 #define ELECTRONIC_TABLES_CELL_H
 
 #include <iostream>
-
+//Абстрактен клас за Клетка
 class Cell {
 public:
     Cell(const char* rc);
@@ -23,8 +23,9 @@ public:
     virtual ~Cell();
 
 protected:
+    //член данна пазеща необработеното съдържаниие на клетката.
     char* rawContent;
-
+private:
     void Copy(const Cell& c);
 };
 

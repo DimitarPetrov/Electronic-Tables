@@ -5,6 +5,8 @@
 #ifndef ELECTRONIC_TABLES_RECOGNITION_H
 #define ELECTRONIC_TABLES_RECOGNITION_H
 
+
+//функции помагащи за определянето на типа на дадена клетка.
 void ClearWhitespaces(char* a);
 bool isInt(char* a);
 bool isString(char* a);

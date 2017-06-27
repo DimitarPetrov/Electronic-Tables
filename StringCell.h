@@ -20,9 +20,11 @@ public:
     virtual ~StringCell();
 
 private:
+    //член данна пазеща обработеното съдържание на клетката.
     char* content;
 
     void Copy(const StringCell& sc);
+    //функция обработваща съдържанието на клетката.
     const char* formatFix( char* c);
 };
 

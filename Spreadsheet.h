@@ -19,7 +19,7 @@ public:
 
     friend std::ostream&operator<<(std::ostream& os, const Spreadsheet& ss);
     friend std::istream& operator>>(std::istream& in , Spreadsheet& ss);
-
+    //функция изчисляваща всички формули в прочетената таблица.
     void FinalState();
 
     void Edit(int row, int col, char* a);
@@ -32,8 +32,9 @@ private:
 
     void resize();
     void Copy(const Spreadsheet& ss);
-
+    //функция изчисляваща дадена формула.
     double CalculateFormula(char* cell);
+    //функция превръщаща стринговете и препратките към клетки във всяка формула в числа.
     double ConvertToNumber(char* a);
 };
 

@@ -10,6 +10,7 @@
 #include "Spreadsheet.h"
 using namespace std;
 
+//функция реализираща командния лог.
 void FileCommands(Spreadsheet& ss) {
     bool ready = false;
     FileCommand a;

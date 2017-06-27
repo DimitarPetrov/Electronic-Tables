@@ -35,6 +35,7 @@ private:
     void Copy(const SRow& a);
     void Erase();
     void resize();
+    //функция която при четене определя от какъв тип е прочетената клетка.
     void RecognizeCell(char* cell);
 };
 

@@ -19,8 +19,9 @@ public:
     virtual Cell* Clone() const override;
 
 private:
+    //член данна пазеща обработеното съдържание на клетката.
     int content;
-
+    //функция обработваща съдържанието на клетката.
     int formatFix(const char* c);
 };
 

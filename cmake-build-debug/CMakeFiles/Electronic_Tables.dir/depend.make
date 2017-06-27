@@ -7,6 +7,7 @@ CMakeFiles/Electronic_Tables.dir/BlankCell.cpp.obj: ../Cell.h
 
 CMakeFiles/Electronic_Tables.dir/Cell.cpp.obj: ../Cell.cpp
 CMakeFiles/Electronic_Tables.dir/Cell.cpp.obj: ../Cell.h
+CMakeFiles/Electronic_Tables.dir/Cell.cpp.obj: ../Recognition.h
 
 CMakeFiles/Electronic_Tables.dir/DoubleCell.cpp.obj: ../Cell.h
 CMakeFiles/Electronic_Tables.dir/DoubleCell.cpp.obj: ../DoubleCell.cpp
