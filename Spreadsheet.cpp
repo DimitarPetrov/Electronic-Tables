@@ -65,10 +65,10 @@ void Spreadsheet::resize() {
 }
 
 std::ostream& operator<<(std::ostream& os, const Spreadsheet& ss){
-    for(int i = 0; i<ss.current; ++i){
+    for(int i = 0; i<ss.current-1; ++i){
         os<<ss.sheet[i]<<std::endl;
     }
-    return os;
+    return os<<ss.sheet[ss.current-1];
 }
 
 std::istream &operator>>(std::istream &in, Spreadsheet &ss) {
@@ -194,14 +194,14 @@ void Spreadsheet::FinalState() {
                 }
                 catch (const char*){
                     delete sheet[i].getRow()[j];
-                    sheet[i].getRow()[j] = new StringCell("ERROR");
+                    sheet[i].getRow()[j] = new StringCell("\"ERROR\"");
                 }
             }
         }
     }
 }
 
-void Spreadsheet::Edit(int row, int col, char* a) {
+bool Spreadsheet::Edit(int row, int col, char* a) {
     if(isInt(a)){
         delete sheet[row].getRow()[col];
         sheet[row].getRow()[col] = new IntCell(a);
@@ -224,7 +224,9 @@ void Spreadsheet::Edit(int row, int col, char* a) {
     }
     else{
         std::cout<<"Unknown Data Type... nothing was changed!"<<std::endl;
+        return false;
     }
+    return true;
 
 }
 
@@ -254,4 +256,5 @@ void Spreadsheet::Print() const {
         }
         std::cout<<std::endl;
     }
+    delete[] collen;
 }

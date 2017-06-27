@@ -75,8 +75,11 @@ void FileCommands(Spreadsheet& ss) {
                         char buffer[128];
                         cin >> row >> col;
                         cin.getline(buffer, 128);
-                        ss.Edit(row - 1, col - 1, buffer);
-                        cout << "Cell on row " << row << " and column " << col << " edited successfuly" << endl;
+                        if(ss.Edit(row - 1, col - 1, buffer)){
+                            cout << "Cell on row " << row << " and column " << col << " edited successfuly" << endl;
+                        }
+                        ss.FinalState();
+
                     }
                     if (a == FileCommand("print")) {
                         ss.Print();

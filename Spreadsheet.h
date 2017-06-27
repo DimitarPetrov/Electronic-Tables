@@ -22,7 +22,7 @@ public:
     //функция изчисляваща всички формули в прочетената таблица.
     void FinalState();
 
-    void Edit(int row, int col, char* a);
+    bool Edit(int row, int col, char* a);
     void Print() const;
 
 private:
